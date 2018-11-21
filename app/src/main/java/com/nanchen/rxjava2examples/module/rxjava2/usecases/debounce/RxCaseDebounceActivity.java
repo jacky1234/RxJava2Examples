@@ -77,11 +77,6 @@ public class RxCaseDebounceActivity extends RxOperatorBaseActivity {
     }
 
     @Override
-    public void onViewClicked() {
-        // 禁止响应点击操作
-    }
-
-    @Override
     protected void doSomething() {
 
     }

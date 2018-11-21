@@ -3,6 +3,7 @@ package com.nanchen.rxjava2examples.module.rxjava2.usecases.okHttp;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.jakewharton.rxbinding2.view.RxView;
 import com.nanchen.rxjava2examples.model.MobileAddress;
 import com.nanchen.rxjava2examples.module.rxjava2.operators.item.RxOperatorBaseActivity;
 
@@ -102,5 +103,4 @@ public class RxNetSingleActivity extends RxOperatorBaseActivity {
                     }
                 });
     }
-
 }

@@ -11,9 +11,9 @@ import io.reactivex.functions.Consumer;
 
 /**
  * Flowable
- *
+ * <p>
  * 专用于解决背压问题
- *
+ * <p>
  * Author: nanchen
  * Email: liushilin520@foxmail.com
  * Date: 2017-06-22  15:15
@@ -29,17 +29,17 @@ public class RxFlowableActivity extends RxOperatorBaseActivity {
 
     @Override
     protected void doSomething() {
-        Flowable.just(1,2,3,4)
+        Flowable.just(1, 2, 3, 4, 5, 6, 7, 8)
                 .reduce(100, new BiFunction<Integer, Integer, Integer>() {
                     @Override
                     public Integer apply(@NonNull Integer integer, @NonNull Integer integer2) throws Exception {
-                        return integer+integer2;
+                        return integer + integer2;
                     }
                 }).subscribe(new Consumer<Integer>() {
             @Override
             public void accept(@NonNull Integer integer) throws Exception {
-                mRxOperatorsText.append("Flowable :"+integer+"\n");
-                Log.e(TAG, "Flowable :"+integer+"\n" );
+                mRxOperatorsText.append("Flowable :" + integer + "\n");
+                Log.e(TAG, "Flowable :" + integer + "\n");
             }
         });
     }

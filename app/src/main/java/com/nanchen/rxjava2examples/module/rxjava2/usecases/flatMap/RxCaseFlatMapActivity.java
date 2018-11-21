@@ -86,6 +86,5 @@ public class RxCaseFlatMapActivity extends RxOperatorBaseActivity {
                         mRxOperatorsText.append("accept: error :" + throwable.getMessage()+"\n");
                     }
                 });
-
     }
 }
